@@ -1,11 +1,16 @@
 # blinko-tg-mcp
 
-HTTP MCP server over the Blinko Cloud Agent API. Hosts `create_note` and `list_notes`.
+Streamable-HTTP MCP server for Blinko Cloud, backed by the Agent API
+(https://api.blinko.space/api/agent/*).
 
-Auth: every request must carry `Authorization: Bearer <BLINKO_API_KEY>` (same header used to reach Blinko).
+## Env
+- `BLINKO_API_KEY` (required)
+- `BLINKO_API_URL` (default https://api.blinko.space)
+- `PORT` (default 8080)
 
-Tools:
-- `create_note` - POST /api/agent/note
-- `list_notes` - GET /api/agent/note?limit=
+## Tools
+- `create_note(content, type?)` - create a Blinko note (NOTE or BLINK)
+- `list_notes(limit?)` - list recent notes
 
-Run: `PORT=8080 BLINKO_API_URL=https://api.blinko.space BLINKO_API_KEY=... node index.js`
+## Security
+Every request must send `Authorization: Bearer <BLINKO_API_KEY>`.

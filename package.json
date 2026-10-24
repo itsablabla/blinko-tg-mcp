@@ -1,7 +1,7 @@
 {
   "name": "blinko-tg-mcp",
   "version": "0.2.0",
-  "description": "HTTP MCP server for Blinko Cloud Agent API",
+  "description": "HTTP MCP server exposing Blinko Cloud via the Agent API",
   "type": "module",
   "engines": { "node": ">=20" },
   "dependencies": {
