@@ -1,11 +1,11 @@
 {
   "name": "blinko-tg-mcp",
-  "version": "0.1.0",
-  "description": "MCP server for Blinko Cloud Agent API (api.blinko.space/api/agent/*)",
+  "version": "0.2.0",
+  "description": "HTTP MCP server for Blinko Cloud Agent API",
   "type": "module",
-  "bin": { "blinko-tg-mcp": "index.js" },
-  "engines": { "node": ">=18" },
+  "engines": { "node": ">=20" },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.0"
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
   }
 }
